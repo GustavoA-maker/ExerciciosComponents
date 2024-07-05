@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Contador from './Components/Contador';
+import AlternarTexto from './Components/AlternarTexto';
+import ListaTarefas from './Components/ListaTarefas';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Componentes React</h1>
+      <h2>Contador</h2>
+      <Contador />
+      <h2>Alternar Texto</h2>
+      <AlternarTexto />
+      <h2>Lista de Tarefas</h2>
+      <ListaTarefas />
     </div>
   );
-}
+};
 
 export default App;
